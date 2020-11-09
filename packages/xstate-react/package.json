@@ -37,7 +37,8 @@
     "clean": "rm -rf dist lib tsconfig.tsbuildinfo",
     "build": "tsc && tsc --outDir es --module es2015",
     "test": "jest",
-    "prepublish": "npm run build && npm run test"
+    "prepublish": "npm run build && npm run test",
+    "build:umd": "tsdx build src/index.ts --format umd --name xstate-react"
   },
   "bugs": {
     "url": "https://github.com/davidkpiano/xstate/issues"
